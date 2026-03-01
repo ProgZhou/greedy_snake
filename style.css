@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #764ba2;
+    margin: 0 0 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-selector {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 10px;
+}
+
+.map-selector label {
+    font-size: 1.1em;
+    color: #333;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.map-btn {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #667eea;
+    background: white;
+    color: #667eea;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.map-btn:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.map-btn.active {
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+}
+
+.map-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.score-board {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.score-board span {
+    font-weight: bold;
+    color: #764ba2;
+    margin: 0 15px;
+}
+
+#gameCanvas {
+    border: 3px solid #667eea;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #f8f9fa;
+}
+
+.controls {
+    margin-top: 20px;
+    color: #666;
+}
+
+.controls p {
+    margin: 5px 0;
+}
+
+.game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1000;
+}
+
+.game-over h2 {
+    color: #764ba2;
+    margin-bottom: 20px;
+}
+
+.game-over button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.game-over button:hover {
+    background: #764ba2;
+    transform: scale(1.05);
+}
